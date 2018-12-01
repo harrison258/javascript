@@ -73,6 +73,18 @@ import FastClick from 'fastclick'
 FastClick.attach(document.body);
 ```
 
+3.引入阿里字符图标
+
+```
+（1）下载图标文件
+（2）引入
+	import './assets/css/iconfont.css';
+（3）使用测试
+	<div class="iconfont">&#xe690;</div>
+```
+
+
+
 #### 参与贡献
 
 1. Fork 本项目
