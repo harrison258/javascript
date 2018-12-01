@@ -58,10 +58,19 @@ git commit -m 'init'
 git push
 ```
 
-#### 使用说明
+#### 文件引入
+
+1.引入reset.css
+
+2.引入fastclick.js
 
 ```
-...
+//安装
+npm install fastclick -S
+// 引入
+import FastClick from 'fastclick'
+// 使用
+FastClick.attach(document.body);
 ```
 
 #### 参与贡献
