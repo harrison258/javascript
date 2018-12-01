@@ -9,9 +9,9 @@ import router from './router'
 Vue.config.productionTip = false;
 
 // 引入css
-import './assets/css/reset.css';
+import 'css/reset.css';
 // 引入字体图标
-import './assets/css/iconfont.css';
+import 'css/iconfont.css';
 
 // 引入fastclick，解决移动端（ipad）点击事件延时300ms问题
 import FastClick from 'fastclick'

@@ -138,7 +138,7 @@ FastClick.attach(document.body);
 </style>
 ```
 
-2、动态CSS（stylus）（https://www.zhangxinxu.com/jq/stylus/）
+### 2、动态CSS（stylus）（https://www.zhangxinxu.com/jq/stylus/）
 
 ```
 // 1.安装

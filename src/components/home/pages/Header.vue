@@ -13,7 +13,6 @@
 </template>
 <script></script>
 <style scoped lang="stylus">
-
   /*@import "../../../assets/css/var.styl";*/
   /*@import "~@/assets/css/var.styl";*/
   @import "~css/var.styl";
@@ -40,7 +39,7 @@
     border-radius: .1rem;
     padding-left: .2rem;
     line-height: .6rem;
-    font-size: .28rem;
+    font-size: .18rem;
     margin:.14rem 0;
   }
   header .header-right{
