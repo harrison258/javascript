@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    header
-    <div class="iconfont">&#xe690;</div>
+    <router-view></router-view>
   </div>
 </template>
 

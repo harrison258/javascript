@@ -91,6 +91,87 @@ FastClick.attach(document.body);
 ### 1、header部分
 
 ```
+<template>
+  <header>
+    <div class="header-left">
+      <span class="iconfont">&#xe600;</span>
+    </div>
+    <div class="header-search">
+      <span class="iconfont">&#xe628;输入城市/景点/游玩主题</span>
+    </div>
+    <div class="header-right">
+      <span class="iconfont">广州&#xe601;</span>
+    </div>
+  </header>
+</template>
 
+<style scoped>
+  header{
+    width: 100%;
+    line-height: .88rem;
+    background-color: #00bcd4;
+    display: flex;
+    color:#fff;
+    font-size: .36rem;
+  }
+  header .header-left{
+    width: .4rem;
+    padding: 0 .2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  header .header-search{
+    flex:1;
+    background-color: #fff;
+    height: .6rem;
+    color:#e4e7ea;
+    border-radius: .1rem;
+    padding-left: .2rem;
+    line-height: .6rem;
+    font-size: .28rem;
+    margin:.14rem 0;
+  }
+  header .header-right{
+    padding: 0 .2rem;
+    font-size: .20rem;
+  }
+</style>
+```
+
+2、动态CSS（stylus）（https://www.zhangxinxu.com/jq/stylus/）
+
+```
+// 1.安装
+	cnpm i stylus stylus-loader -S
+// 2.创建文件(var.styl)，并书写内容
+	$bgColor = #00bcd4
+	$textColor = #fff
+// 3.应用
+	<style scoped lang="stylus">
+      @import "../../../assets/css/var.styl";
+
+      header{
+        width: 100%;
+        line-height: .88rem;
+        background-color:$bgColor ;
+        display: flex;
+        color:#fff;
+        font-size: .36rem;
+      }      
+</style>
+// 4.缩短引用css文件路径
+    // 1）修改配置文件（webpack.base.conf.js）
+        resolve: {
+            extensions: ['.js', '.vue', '.json'],
+            alias: {
+                'vue$': 'vue/dist/vue.esm.js',
+                '@': resolve('src'),
+                'css':resolve('src/assets/css')
+            }
+        }
+    // 2）修改引用路径
+    	@import "~css/var.styl";
+    // 3）重启服务
+    	npm run dev
 ```
 
